@@ -1,8 +1,8 @@
-// File: src/component/home/Home.jsx
+// File: src/components/home/Home.jsx
 
 import React from "react";
 import "./home.css";
-import Data from "./data";
+import Data from "./Data";
 import Social from "./social";
 
 const Home = () => {
@@ -13,11 +13,7 @@ const Home = () => {
           <Social />
           <Data /> {/* Data (text content) comes first */}
           <div className="home_img"></div> {/* Image comes second */}
-          {/* You can adjust the placement of Social icons based on your desired layout */}
-          {/* For example, to place them below the text: */}
-          {/* <Social /> */}
         </div>
-        {/* If you want the social icons on the left (as in the original code), keep them here: */}
       </div>
     </section>
   );

@@ -1,35 +1,44 @@
+// File: src/components/project/Project.jsx
+
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import bikeImage from "../../images/BikeNew.png";
+import petCare from "../../images/petCare.png";
+import sportImage from "../../images/sports.png";
 import "./project.css";
 
 const Project = () => {
   const projectsData = [
     {
-      title: "Fit Flex",
+      title: "Bike Rental System",
       description:
-        "A MERN Stack Application where client can admin panel have implemented with payment method also.",
-      imageUrl: "/images/fitflex.png", // Replace with the actual path to your image
-      liveLink: "#", // Replace with the actual live link
-      clientCodeLink: "#", // Replace with the actual client code link
-      serverCodeLink: "#", // Replace with the actual server code link
+        "A user-friendly bike rental platform with secure login, role-based access, and admin controls. Users can browse, book, manage rentals, and payments, while admins handle bikes, users, and bookings through a structured system.",
+      imageUrl: bikeImage,
+      liveLink:
+        "https://bike-rental-reservation-system-frontend-eosin.vercel.app/",
+      clientCodeLink:
+        "https://github.com/ahmedbaser/Bike-Rental-Reservation-System-Frontend",
+      serverCodeLink:
+        "https://github.com/ahmedbaser/Bike-Rental-Reservation-System-Backend",
     },
     {
-      title: "Skill Approved",
+      title: "Pet Care & Stories",
       description:
-        "An online marketplace website where user can find job based on category and apply for it. Also can add job.",
-      imageUrl: "/images/skillapproved.png", // Replace with the actual path to your image
-      liveLink: "#", // Replace with the actual live link
-      clientCodeLink: "#", // Replace with the actual client code link
-      serverCodeLink: "#", // Replace with the actual server code link
+        "A responsive  social media platform for pet enthusiasts featuring user authentication, post management, Stripe-integrated premium content, AI chatbot (OpenAI) for pet care advice, and admin controls for managing users, posts, and premium services.",
+      imageUrl: petCare,
+      liveLink: "https://pet-care-app-frontend.vercel.app/",
+      clientCodeLink: "https://github.com/ahmedbaser/pet-care-app-frontend",
+      serverCodeLink:
+        "https://github.com/ahmedbaser/Pet-Care-Tips-Stories-Backend",
     },
     {
-      title: "Tech Touch",
+      title: "E-Commerce Sporting Website",
       description:
-        "Tech Touch is a brand shop application where user can add and select brand based product to their cart after login.",
-      imageUrl: "/images/techtouch.png", // Replace with the actual path to your image
-      liveLink: "#", // Replace with the actual live link
-      clientCodeLink: "#", // Replace with the actual client code link
-      serverCodeLink: "#", // Replace with the actual server code link
+        " A responsive sporting goods e-commerce site enabling users to browse, add to cart, and pay securely. Enjoy a dynamic, responsive UI with real-time feedback, while admins effortlessly manage products and updates.",
+      imageUrl: sportImage,
+      liveLink: "https://assignment-4-frontend.vercel.app/",
+      clientCodeLink: "https://github.com/ahmedbaser/assignment-4-frontend",
+      serverCodeLink: "https://github.com/ahmedbaser/assignment-4-backend",
     },
   ];
 

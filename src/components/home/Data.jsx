@@ -1,4 +1,4 @@
-// File: src/component/home/Data.jsx
+// File: src/components/home/Data.jsx
 
 import React from "react";
 import "./home.css";
@@ -36,24 +36,30 @@ const Data = () => {
 
       {/* <h3 className="home_subtitle">Web Application Developer</h3> */}
       <p className="home_description">
-        Dynamic, detail-oriented and responsive Web Application Developer with
-        over one year of experience in Self Learning. Skilled in a variety of
-        programming languages, including JavaScript, React Js, and Node.js. Hold
-        a Bachelor's degree in Computer Science from Stamford University
-        Bangladesh. Maintain several open source projects.
+        Innovative, meticulous, and adaptive Web Application Developer with over
+        one year of hands-on experience through Self Learning. Proficient in
+        multiple programming languages, including JavaScript, React.js, Next.js
+        and Node.js. Continuously expanding technical expertise and creative
+        problem-solving abilities by building dynamic, responsive, and
+        user-focused web applications.
       </p>
-      <a href="#" className="button button--flex">
+      <a href="#" className="download-button">
         Download CV
-        <svg
-          className="button_icon"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-        >
-          {/* You can add an arrow icon here if you want */}
-        </svg>
+        <span className="download-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M12 16V4M17 11l-5 5-5-5" />
+          </svg>
+        </span>
       </a>
     </div>
   );

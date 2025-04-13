@@ -14,7 +14,7 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column by default */
+    grid-template-columns: 1fr; 
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -24,14 +24,14 @@
   /* Media query for medium screens (e.g., tablets) */
   @media (min-width: 768px) {
     .projects-grid {
-      grid-template-columns: repeat(2, 1fr); /* Two columns */
+      grid-template-columns: repeat(2, 1fr); 
     }
   }
   
   /* Media query for large screens (e.g., desktops) */
   @media (min-width: 1024px) {
     .projects-grid {
-      grid-template-columns: repeat(3, 1fr); /* Three columns */
+      grid-template-columns: repeat(3, 1fr);
       gap: 3rem;
     }
   }
@@ -41,13 +41,16 @@
     border-radius: 0.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: grid; 
+    grid-template-rows: 1fr auto; 
   }
   
   .project-card img {
     width: 100%;
-    height: 12rem; /* Adjust as needed */
+    height: auto;
     object-fit: cover;
     display: block;
+    border-radius: 0.5rem 0.5rem 0 0; 
   }
   
   .project-card-content {
@@ -74,32 +77,49 @@
     font-size: 0.8rem;
   }
   
+
   .project-card-links a {
     text-decoration: none;
-    padding: 0.3rem 0.6rem;
-    border-radius: 0.2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.3rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
   }
   
   .project-card-links a.live {
-    color: #dc2626; /* Red */
+    color: #f44336; 
+    background-color: #ffebee;
+    border: 1px solid #007bff;  
+  }  
+  
+   .project-card-links a.live:hover {
+    background-color: #e57373; 
+    color: #fff;
+    border-color: #e57373;
   }
   
-  .project-card-links a.live:hover {
-    text-decoration: underline;
-  }
-  
-  .project-card-links a.client-code {
-    color: #1e40af; /* Blue */
+
+   .project-card-links a.client-code {
+    color: #28a745; 
+    background-color: #e9f9ec; 
+    border: 1px solid #28a745; 
   }
   
   .project-card-links a.client-code:hover {
-    text-decoration: underline;
-  }
+    background-color: #1e7e34; 
+    color: #fff;
+    border-color: #1e7e34;
+  } 
   
-  .project-card-links a.server-code {
-    color: #16a34a; /* Green */
-  }
+   .project-card-links a.server-code {
+    color: #ffc107; 
+    background-color: #fff8e1; 
+    border: 1px solid #ffc107; 
+  } 
   
+
   .project-card-links a.server-code:hover {
-    text-decoration: underline;
-  }
+    background-color: #d99e00; 
+    color: #fff;
+    border-color: #d99e00;
+  } 

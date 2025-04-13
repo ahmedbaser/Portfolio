@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_l9pq565", // Replace with your EmailJS Service ID
+        "template_cfr4zho", // Replace with your EmailJS Template ID
+        form.current,
+        "SOLoCjfXZjWwftBXH" // Replace with your EmailJS Public Key
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+          alert("Message sent successfully!");
+          e.target.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          alert("Failed to send message. Please try again later.");
+        }
+      );
+  };
+
   return (
     <div className="contact">
       <div className="contact-left">
@@ -25,13 +51,16 @@ const Contact = () => {
       </div>
       <div className="contact-right">
         <h2>Write me about project</h2>
-        <form data-vercel-form className="contact-form">
+        <p className="contact-heading">
+          Fill in the form to start conversation
+        </p>
+        <form ref={form} onSubmit={sendEmail} className="contact-form">
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
               type="text"
               id="name"
-              name="name"
+              name="user_name"
               placeholder="Insert your name"
               className="form-input"
               required
@@ -42,7 +71,7 @@ const Contact = () => {
             <input
               type="email"
               id="email"
-              name="email"
+              name="user_email"
               placeholder="Insert your email"
               className="form-input"
               required
@@ -52,13 +81,13 @@ const Contact = () => {
             <label htmlFor="project">Project</label>
             <textarea
               id="project"
-              name="project"
+              name="message"
               placeholder="Insert your message"
               className="form-textarea"
               required
             ></textarea>
           </div>
-          <button type="submit" className="send-button">
+          <button type="submit" className="contact-button">
             Send Message <span className="send-icon"></span>
           </button>
         </form>

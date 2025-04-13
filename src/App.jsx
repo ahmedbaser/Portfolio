@@ -1,7 +1,8 @@
 import "./App.css";
 import Contact from "./components/contact/Contact";
 import Education from "./components/education/Education";
-import Home from "./components/home/home";
+import Footer from "./components/footer/Footer";
+import Home from "./components/home/Home";
 import Project from "./components/projects/Project";
 import Skills from "./components/skills/Skills";
 import "./index.css";
@@ -15,6 +16,7 @@ function App() {
         <Project />
         <Education />
         <Contact />
+        <Footer />
       </main>
     </>
   );

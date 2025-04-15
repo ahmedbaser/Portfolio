@@ -1,7 +1,7 @@
 import React from "react";
-import { FaReact, FaJs, FaGitAlt } from "react-icons/fa"; // For React, JavaScript, Git logos
-import { SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si"; // For Next.js, Redux, Tailwind logos
-import { AntDesignOutlined } from "@ant-design/icons"; // For Ant Design logo
+import { FaReact, FaJs, FaGitAlt } from "react-icons/fa";
+import { SiNextdotjs, SiRedux, SiTailwindcss } from "react-icons/si";
+import { AntDesignOutlined } from "@ant-design/icons";
 
 const Frontend = () => {
   return (
@@ -31,7 +31,6 @@ const Frontend = () => {
           </div>
 
           <div className="skills-data">
-            {/* You might want a specific TypeScript icon here */}
             <span style={{ color: "#007ACC" }}>TS</span>
             <div>
               <h3 className="skills-name">TypeScript</h3>
@@ -56,7 +55,7 @@ const Frontend = () => {
           </div>
 
           <div className="skills-data">
-            <AntDesignOutlined style={{ color: "#1890FF" }} />{" "}
+            <AntDesignOutlined style={{ color: "#1890FF" }} />
             {/* Ant Design Logo */}
             <div>
               <h3 className="skills-name">Antd</h3>
@@ -64,7 +63,7 @@ const Frontend = () => {
           </div>
 
           <div className="skills-data">
-            <FaGitAlt style={{ color: "#F05032" }} /> {/* Git Logo */}
+            <FaGitAlt style={{ color: "#F05032" }} />
             <div>
               <h3 className="skills-name">Git</h3>
             </div>

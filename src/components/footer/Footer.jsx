@@ -1,5 +1,3 @@
-// File: src/components/footer/Footer.jsx
-
 import React from "react";
 import "./Footer.css";
 import { FaGithub } from "react-icons/fa";
@@ -29,7 +27,6 @@ const Footer = () => {
         >
           <FaGithub size={24} />
         </a>{" "}
-        {/* Add more social media links as needed */}
       </div>
       <div className="footer-divider"></div>
       <div className="footer-copyright">

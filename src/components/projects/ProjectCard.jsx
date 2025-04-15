@@ -1,7 +1,5 @@
-// File: src/components/projects/ProjectCard.jsx
-
 import React from "react";
-import "./project.css"; // Import the CSS file
+import "./project.css";
 
 const ProjectCard = ({
   title,

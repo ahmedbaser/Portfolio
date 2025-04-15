@@ -1,5 +1,3 @@
-// File: src/components/home/Data.jsx
-
 import React from "react";
 import "./home.css";
 import { TypeAnimation } from "react-type-animation";
@@ -13,9 +11,9 @@ const Data = () => {
           <br></br>
           <TypeAnimation
             sequence={[
-              "I'm Baser Ahmed Shiplu !", // Original line
+              "I'm Baser Ahmed Shiplu !",
               1000,
-              "I'm a Web Developer !", // Added line 1
+              "I'm a Web Developer !",
               1000,
             ]}
             wrapper="span"
@@ -23,18 +21,8 @@ const Data = () => {
             repeat={Infinity}
           />
         </span>
-
-        <svg
-          viewBox="0 0 48 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="home_hand"
-        >
-          {/* SVG content remains the same (if you are keeping it) */}
-        </svg>
       </h1>
 
-      {/* <h3 className="home_subtitle">Web Application Developer</h3> */}
       <p className="home_description">
         Innovative, meticulous, and adaptive Web Application Developer with over
         one year of hands-on experience through Self Learning. Proficient in

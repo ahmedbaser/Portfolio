@@ -74,17 +74,7 @@
   }
   
 
-  
-  @media screen and (max-width: 576px) {
-    .skills-container{
-        grid-template-columns:1fr;
-       }
-       .skills-content{
-        padding: 1.5rem;
-       }
-  }
-  
-  /* For small devices */
+  /* for small device */
   @media screen and (max-width: 350px) {
     .skills-box{
         column-gap: 1.25rem;

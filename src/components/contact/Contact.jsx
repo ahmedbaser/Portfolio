@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
-import { FaEnvelope, FaWhatsapp, FaFacebookMessenger } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const form = useRef();
@@ -11,10 +11,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_l9pq565", // Replace with your EmailJS Service ID
-        "template_cfr4zho", // Replace with your EmailJS Template ID
+        "service_l9pq565",
+        "template_cfr4zho",
         form.current,
-        "SOLoCjfXZjWwftBXH" // Replace with your EmailJS Public Key
+        "SOLoCjfXZjWwftBXH"
       )
       .then(
         (result) => {
@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact" id="contact">
       <div className="contact-left">
         <h2>Talk to me</h2>
         <div className="contact-info">

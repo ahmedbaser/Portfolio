@@ -1,11 +1,9 @@
-// File: src/component/education/Education.jsx
-
 import React from "react";
 import "./Education.css";
 
 const Education = () => {
   return (
-    <div className="education">
+    <div className="education" id="education">
       <h2>EDUCATION</h2>
       <div className="timeline">
         <div className="entry">

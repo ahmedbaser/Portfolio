@@ -1,5 +1,3 @@
-// File: src/components/project/Project.jsx
-
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import bikeImage from "../../images/BikeNew.png";

@@ -1,27 +1,40 @@
 import React from "react";
 import "./home.css";
 import { TypeAnimation } from "react-type-animation";
+import punctuationMark from "../../images/PunctuationMark.png";
 
 const Data = () => {
   return (
     <div className="home_data">
-      <h1 className="home_title">
-        <span className="first-title">Hello There</span>
-        <span className="type-animation-wrapper">
-          <br></br>
-          <TypeAnimation
-            sequence={[
-              "I'm Baser Ahmed Shiplu !",
-              1000,
-              "I'm a Web Developer !",
-              1000,
-            ]}
-            wrapper="span"
-            speed={20}
-            repeat={Infinity}
-          />
-        </span>
-      </h1>
+      <h1 className="home_title"></h1>
+      <span className="first-title">
+        Hello There{" "}
+        <img
+          src={punctuationMark}
+          className="PunctuationMark"
+          alt="Punctuation Mark"
+          style={{
+            width: "5px",
+            marginLeft: "1px",
+          }}
+        />
+      </span>
+      <span className="type-animation-wrapper">
+        <br></br>
+        <TypeAnimation
+          sequence={[
+            "I'm Baser Ahmed Shiplu!",
+            1000,
+            "I'm a Web Developer!",
+            1000,
+            "From Bangladesh!",
+            1000,
+          ]}
+          wrapper="span"
+          speed={20}
+          repeat={Infinity}
+        />
+      </span>
 
       <p className="home_description">
         Innovative, meticulous, and adaptive Web Application Developer with over

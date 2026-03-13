@@ -1,0 +1,209 @@
+
+/* honor.css new file added */
+.honor {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.honor h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.timeline {
+  width: 60%;
+  
+  max-width: 800px;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.entry:nth-child(odd) {
+  padding-right: 50px;
+}
+
+.entry:nth-child(even) {
+  padding-left: 50px;
+  flex-direction: row-reverse;
+}
+
+.date {
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.entry:nth-child(odd) .date {
+  left: 0;
+}
+
+.entry:nth-child(even) .date {
+  right: 0;
+}
+
+.details {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 45%;
+}
+
+.entry:nth-child(odd) .details {
+  text-align: left;
+}
+
+.entry:nth-child(even) .details {
+  text-align: right;
+}
+
+.details h3 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.details p {
+  margin-bottom: 3px;
+  color: #555;
+  font-size: 0.95em;
+}
+
+/* Timeline Dots */
+.entry::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Certificate Button */
+.certificate-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  color: #007bff;
+  text-decoration: none;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+/* Hover Effect */
+.certificate-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+
+/* For Desktops device */
+  @media screen and (max-width: 1200px) {
+  .timeline {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+  }
+   
+}  
+
+
+
+
+/* For mobile device (320px – 375px) */
+@media screen and (max-width: 480px) {
+  .honor {
+    padding: 20px;
+  }
+
+  .timeline {
+    width: 100%;
+    padding: 0;
+  }
+
+  .timeline::before {
+    left: 8px;
+    transform: none;
+  }
+
+  .entry {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .entry:nth-child(even) {
+    flex-direction: column;
+    padding-left: 20px;
+  }
+
+  .date {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-bottom: 5px;
+  }
+
+  .details {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .details h3 {
+    font-size: 1rem;
+  }
+
+  .details p {
+    font-size: 0.85rem;
+  }
+
+  .entry::after {
+    left: 8px;
+    top: 20px;
+    transform: none;
+  }
+}
+
+
+
+

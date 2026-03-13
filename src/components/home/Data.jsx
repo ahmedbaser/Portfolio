@@ -44,7 +44,11 @@ const Data = () => {
         problem-solving abilities by building dynamic, responsive, and
         user-focused web applications.
       </p>
-      <a href="#" className="download-button">
+      <a
+        download=""
+        href="https://drive.google.com/uc?export=download&id=1C92cmoRN3218N8xgKett2KAPbYPbOqmN"
+        className="download-button"
+      >
         Download CV
         <span className="download-icon">
           <svg

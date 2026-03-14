@@ -12,6 +12,10 @@
   margin-bottom: 30px;
   color: #333;
 }
+.project-name {
+  font-weight: 600;
+  color: #333;
+}
 
 .timeline {
   width: 60%;

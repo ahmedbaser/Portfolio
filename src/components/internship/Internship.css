@@ -24,8 +24,8 @@
   
   transition: all 0.3s ease;
   font-weight: 500; */
-  text-decoration: underline;
-  text-decoration: #333;
+  
+  color: #333;
   font-weight: 600;
 }
 .timeline {

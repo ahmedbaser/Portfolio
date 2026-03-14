@@ -37,6 +37,26 @@ const Honor = () => {
             </a>
           </div>
         </div>
+        <div className="entry">
+          <div className="date">2025</div>
+          <div className="details">
+            <h3>NEXT AI Hackathon</h3>
+            <p>Participant</p>
+            <p>
+              <span className="project-name">Project Name:</span> Pet Care &
+              Stories
+            </p>
+            <p>
+              This AI project was submitted to the NEXT AI Hackathon 2025. The
+              live demo and GitHub repositories (frontend and backend) are
+              available in the Projects section.
+            </p>
+            {/* <p>View Certificate </p> */}
+            <a className="certificate-btn" href="#projects">
+              Projects
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

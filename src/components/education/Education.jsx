@@ -11,7 +11,7 @@ const Education = () => {
           <div className="details">
             <h3>Higher Secondary Certificate</h3>
             <p>Kulaura Government college</p>
-            <p>Group: Science</p>
+            <p>Field of Study: Science</p>
           </div>
         </div>
       </div>
